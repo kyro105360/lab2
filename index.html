@@ -10,11 +10,12 @@
   <button class="tablinks" onclick="openInfo(event, 'Client')">CLIENT</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">PRODUCTS</button>
   <button class="tablinks" onclick="openInfo(event, 'Cart')">CART</button>
+  <p class = "logo">Loblaws</p>
 </div>
 
 
 <div id="Client" class="tabcontent">
-  <h1>Client Information</h1>
+  <h2>Client Information</h2>
   <p>Do you have any dietary restrictions?</p>
   <p>Please select an option:</p>
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
@@ -27,7 +28,7 @@
 </div>
 
 <div id="Products" class="tabcontent">
-  <h1>Your targeted products</h1>
+  <h2>Your targeted products</h2>
   <p>We preselected products based on your restrictions.</p>
 	<p>Choose items to buy:</p>
 	 <div id="displayProduct"></div>
@@ -37,8 +38,7 @@
 </div>
 
 <div id="Cart" class="tabcontent">
-  <h1>Cart</h1>
-  <p>Here is your cart.</p>
+  <h2>Cart</h2>
   <div id="displayCart"></div>
 </div>
 

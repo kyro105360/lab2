@@ -1,5 +1,8 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
+body{
+    background-color: lightblue;
+}
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -29,6 +32,11 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+.logo{
+    float:right;
+    margin-right: 70px;
+    
 }
 
 p {
