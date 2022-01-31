@@ -2,23 +2,66 @@
 // A set of ingredients should be added to products		 
 
 var products = [
+	
 	{
-		name: "brocoli",
+		name: "tomato - 0.49$ ",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.49
+	},
+	{
+		name: "onion - 0.59$",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.59
+	},
+	{
+		name: "brocoli - 1.99$",
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "milk - 2.35$",
+		vegetarian: true,
+		glutenFree: true,
+		price: 2.35
+	},
+	{
+		name: "bread - 2.35$",
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35
 	},
 	{
-		name: "salmon",
+		name: "peanut butter - 4.00$",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.00
+	},
+	{
+		name: "cherries - 6.00$",
+		vegetarian: true,
+		glutenFree: true,
+		price: 6.00
+	},
+	{
+		name: "beef - 9.90$",
+		vegetarian: false,
+		glutenFree: true,
+		price: 9.90
+	},
+	{
+		name: "salmon - 10.00$",
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
+	},
+	{
+		name: "rice - 20.00$",
+		vegetarian: true,
+		glutenFree: true,
+		price: 20.00
 	}
 ];
 	
