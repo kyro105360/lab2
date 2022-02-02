@@ -2,26 +2,48 @@
 <html>
 <head>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">CLIENT</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">PRODUCTS</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">CART</button>
-  <h1 class = "logo">FOOD PARADISE</h1> 
-</div>
+  <h1>Welcome To Food Paradise Supper Market</h1> 
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'Client')">CLIENT</button>
+      <button class="tablinks" onclick="openInfo(event, 'Products')">PRODUCTS</button>
+      <button class="tablinks" onclick="openInfo(event, 'Cart')">CART</button>
+    </div>
+  </div>
 
-
-<div id="Client" class="tabcontent">
+<div id="Client" class="client tabcontent">
   <h2>Client Information</h2>
   <p>Do you have any dietary restrictions?</p>
   <p>Please select an option:</p>
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
     <option value=""></option>
-    <option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="Both">Both</option>
+    <optgroup class="grouplabel" label="Vegetarian">
+    <!-- <option class="dropdown-submenu" value="Vegetarian">Vegetarian</option> -->
+      <option value="Organic">Organic</option>
+      <option value="Non-Organic">Non-Organic</option>
+     </optgroup>
+ 
+
+
+    <optgroup class="grouplabel" label="GlutenFree">
+      <option value="Organic">Organic</option>
+      <option value="Non-Organic">Non-Organic</option>
+     </optgroup>
+
+  <optgroup class="grouplabel" label="Both">
+      <option value="Organic">Organic</option>
+      <option value="Non-Organic">Non-Organic</option>
+     </optgroup>
+
+
     <option value="None">None</option>
 	</select>
 </div>
@@ -32,7 +54,7 @@
 	<p>Choose items to buy:</p>
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
+		Add to Cart
 	</button>
 </div>
 
@@ -46,6 +68,8 @@
 
 </body>
 <footer>
-  <p> &copy; 2022 | Group 18 | All right reserved.</p>
+  <p> &copy; 2022 | Group 18 | All right reserved</p>
 </footer>
 </html>
+
+
